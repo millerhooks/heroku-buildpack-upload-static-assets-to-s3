@@ -20,7 +20,7 @@ source ${BP_DIR}/lib/output.sh
 
 ### debug
 echo "debugging build"
-cwd
+pwd
 ls -alR
 cat package.json
 env
