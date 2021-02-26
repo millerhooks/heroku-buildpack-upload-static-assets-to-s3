@@ -23,11 +23,14 @@ echo "debugging build"
 pwd
 ls -alR
 env
+echo "BP_DIR ${BP_DIR}"
 ls -al ${BP_DIR}
+echo "BUILD_DIR ${BUILD_DIR}"
 ls -al ${BUILD_DIR}
 
 
 ### Upload with Node
+cd ${BP_DIR}
 npm install | output "$LOG_FILE"
 
 BUILD_DIR=${BUILD_DIR} \
