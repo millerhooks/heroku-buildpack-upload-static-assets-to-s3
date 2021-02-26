@@ -18,6 +18,13 @@ LOG_FILE='/tmp/node-build-log.txt'
 ### Load dependencies
 source ${BP_DIR}/lib/output.sh
 
+### debug
+echo "debugging build"
+cwd
+ls -alR
+cat package.json
+env
+
 ### Upload with Node
 npm install | output "$LOG_FILE"
 
